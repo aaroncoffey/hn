@@ -2,12 +2,14 @@
 
 This is a wrapper client for the Hacker News API. It implements the most recent version, v0. It supports all resource requests.
 
+Forked from the dormant repo `github.com/munrocape/hn/client` in order to support modern go modules. No changes made to the code, none planned.
+
 ##Usage
-From a command line, run `$ go fetch github.com/munrocape/hn/client`
+From a command line, run `$ go get github.com/aaroncoffey/hn`
 
 You can then include it in any go file.
 ```Go
-import "github.com/munrocape/hn/client"
+import "github.com/aaroncoffey/hn"
 ```
 
 Below is a quick reference of methods. Everything is explained in detail following.
@@ -42,7 +44,7 @@ The below code examples are meant to demonstrate how to fetch resources as well 
 ```Go
 package main
 import ("fmt"
-        hn "github.com/munrocape/hn/client"
+        hn "github.com/aaroncoffey/hn"
 )
 func main() {
   client := hn.NewClient()
